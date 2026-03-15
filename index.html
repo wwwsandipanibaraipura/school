@@ -1716,6 +1716,29 @@ function previewPhoto(input) {
       reader.readAsDataURL(file);
     }
   }
+  function previewDoc(input, previewDivId, previewImgId) {
+    if (input.files && input.files[0]) {
+      const file = input.files[0];
+      if (file.size > 2 * 1024 * 1024) {
+        showModal('⚠️', 'फ़ाइल बड़ी है', 'कृपया 2MB से छोटी फ़ाइल चुनें।');
+        input.value = '';
+        return;
+      }
+      if (file.type === 'application/pdf') {
+        document.getElementById(previewDivId).style.display = 'block';
+        document.getElementById(previewImgId).style.display = 'none';
+        document.getElementById(previewDivId).innerHTML =
+          '<p style="font-size:0.75rem; color:green; margin-top:4px;">✅ PDF file selected: ' + file.name + '</p>';
+        return;
+      }
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        document.getElementById(previewImgId).src = e.target.result;
+        document.getElementById(previewDivId).style.display = 'block';
+      };
+      reader.readAsDataURL(file);
+    }
+  }
   function showPayment(cls) {
     showModal('💳', `कक्षा ${cls} शुल्क भुगतान`, 'नीचे दिए फॉर्म में विवरण भरकर "सुरक्षित भुगतान करें" बटन दबाएं।');
     const select = document.getElementById('fee-class');
