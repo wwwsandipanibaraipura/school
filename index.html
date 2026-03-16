@@ -1049,77 +1049,489 @@
 
 
 <!-- ==================== TEACHERS PAGE ==================== -->
+   <!-- ==================== TEACHERS PAGE ==================== -->
 <div id="page-teachers" class="page">
   <div class="section">
-    <h2 class="section-title">शिक्षक कक्ष</h2>
-    <p class="section-subtitle">हमारे अनुभवी एवं समर्पित शिक्षक परिवार</p>
+    <h2 class="section-title">शिक्षक एवं स्टाफ</h2>
+    <p class="section-subtitle">सांदीपनि विद्यालय का समर्पित परिवार</p>
 
-    <div class="teacher-grid">
-      <div class="teacher-card">
-        <div class="teacher-avatar">👨‍💼</div>
-        <div class="teacher-name">श्री [प्राचार्य नाम]</div>
-        <div class="teacher-subject">प्राचार्य</div>
-        <span class="teacher-badge">M.Ed, M.A.</span>
+    <!-- STAFF STATS -->
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:14px; margin-bottom:40px;">
+      <div style="background:linear-gradient(135deg,#1e4db7,#3a86ff); color:white; border-radius:12px; padding:18px; text-align:center;">
+        <div style="font-size:2rem; font-weight:900;">40</div>
+        <div style="font-size:0.8rem; margin-top:4px; opacity:0.9;">नियमित शिक्षक</div>
       </div>
-      <div class="teacher-card">
-        <div class="teacher-avatar">👨‍🏫</div>
-        <div class="teacher-name">अंशुल दुबे</div>
-        <div class="teacher-subject">ICT / कंप्यूटर शिक्षक</div>
-        <span class="teacher-badge">B.Tech, PGDCA</span>
+      <div style="background:linear-gradient(135deg,#f0a500,#f59e0b); color:white; border-radius:12px; padding:18px; text-align:center;">
+        <div style="font-size:2rem; font-weight:900;">10</div>
+        <div style="font-size:0.8rem; margin-top:4px; opacity:0.9;">अतिथि शिक्षक</div>
       </div>
-      <div class="teacher-card">
-        <div class="teacher-avatar">👩‍🏫</div>
-        <div class="teacher-name">श्रीमती [नाम]</div>
-        <div class="teacher-subject">हिंदी शिक्षक</div>
-        <span class="teacher-badge">M.A. हिंदी</span>
+      <div style="background:linear-gradient(135deg,#16a34a,#15803d); color:white; border-radius:12px; padding:18px; text-align:center;">
+        <div style="font-size:2rem; font-weight:900;">3</div>
+        <div style="font-size:0.8rem; margin-top:4px; opacity:0.9;">चतुर्थ श्रेणी</div>
       </div>
-      <div class="teacher-card">
-        <div class="teacher-avatar">👨‍🏫</div>
-        <div class="teacher-name">श्री [नाम]</div>
-        <div class="teacher-subject">गणित शिक्षक</div>
-        <span class="teacher-badge">M.Sc. गणित</span>
-      </div>
-      <div class="teacher-card">
-        <div class="teacher-avatar">👩‍🏫</div>
-        <div class="teacher-name">श्रीमती [नाम]</div>
-        <div class="teacher-subject">विज्ञान शिक्षक</div>
-        <span class="teacher-badge">M.Sc. विज्ञान</span>
-      </div>
-      <div class="teacher-card">
-        <div class="teacher-avatar">👨‍🏫</div>
-        <div class="teacher-name">श्री [नाम]</div>
-        <div class="teacher-subject">सामाजिक विज्ञान</div>
-        <span class="teacher-badge">M.A. इतिहास</span>
-      </div>
-      <div class="teacher-card">
-        <div class="teacher-avatar">👩‍🏫</div>
-        <div class="teacher-name">श्रीमती [नाम]</div>
-        <div class="teacher-subject">अंग्रेजी शिक्षक</div>
-        <span class="teacher-badge">M.A. English</span>
-      </div>
-      <div class="teacher-card">
-        <div class="teacher-avatar">👨‍🏫</div>
-        <div class="teacher-name">श्री [नाम]</div>
-        <div class="teacher-subject">शारीरिक शिक्षा</div>
-        <span class="teacher-badge">B.P.Ed</span>
+      <div style="background:linear-gradient(135deg,#7c3aed,#6d28d9); color:white; border-radius:12px; padding:18px; text-align:center;">
+        <div style="font-size:2rem; font-weight:900;">6</div>
+        <div style="font-size:0.8rem; margin-top:4px; opacity:0.9;">सुरक्षा गार्ड</div>
       </div>
     </div>
 
+    <!-- SECTION 1: REGULAR TEACHERS -->
+    <div style="margin-bottom:50px;">
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:24px; padding-bottom:12px; border-bottom:3px solid var(--blue-mid);">
+        <div style="background:var(--blue-mid); color:white; padding:8px 16px; border-radius:8px; font-weight:700; font-size:0.9rem;">👨‍🏫 नियमित शिक्षक (40)</div>
+      </div>
+      <div class="teacher-grid">
+        <!-- Principal -->
+        <div class="teacher-card">
+          <div class="teacher-avatar">👨‍💼</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">प्राचार्य</div>
+          <div class="teacher-id">🪪 EMP-R001</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👨‍🏫</div>
+          <div class="teacher-name">अंशुल दुबे</div>
+          <div class="teacher-subject">ICT / कंप्यूटर</div>
+          <div class="teacher-id">🪪 EMP-R002</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👩‍🏫</div>
+          <div class="teacher-name">श्रीमती [नाम]</div>
+          <div class="teacher-subject">हिंदी</div>
+          <div class="teacher-id">🪪 EMP-R003</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👨‍🏫</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">गणित</div>
+          <div class="teacher-id">🪪 EMP-R004</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👩‍🏫</div>
+          <div class="teacher-name">श्रीमती [नाम]</div>
+          <div class="teacher-subject">विज्ञान</div>
+          <div class="teacher-id">🪪 EMP-R005</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👨‍🏫</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">सामाजिक विज्ञान</div>
+          <div class="teacher-id">🪪 EMP-R006</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👩‍🏫</div>
+          <div class="teacher-name">श्रीमती [नाम]</div>
+          <div class="teacher-subject">अंग्रेजी</div>
+          <div class="teacher-id">🪪 EMP-R007</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👨‍🏫</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">शारीरिक शिक्षा</div>
+          <div class="teacher-id">🪪 EMP-R008</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👩‍🏫</div>
+          <div class="teacher-name">श्रीमती [नाम]</div>
+          <div class="teacher-subject">संस्कृत</div>
+          <div class="teacher-id">🪪 EMP-R009</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👨‍🏫</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">भूगोल</div>
+          <div class="teacher-id">🪪 EMP-R010</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👩‍🏫</div>
+          <div class="teacher-name">श्रीमती [नाम]</div>
+          <div class="teacher-subject">इतिहास</div>
+          <div class="teacher-id">🪪 EMP-R011</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👨‍🏫</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">नागरिक शास्त्र</div>
+          <div class="teacher-id">🪪 EMP-R012</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👩‍🏫</div>
+          <div class="teacher-name">श्रीमती [नाम]</div>
+          <div class="teacher-subject">गृह विज्ञान</div>
+          <div class="teacher-id">🪪 EMP-R013</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👨‍🏫</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">जीव विज्ञान</div>
+          <div class="teacher-id">🪪 EMP-R014</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👩‍🏫</div>
+          <div class="teacher-name">श्रीमती [नाम]</div>
+          <div class="teacher-subject">रसायन विज्ञान</div>
+          <div class="teacher-id">🪪 EMP-R015</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👨‍🏫</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">भौतिक विज्ञान</div>
+          <div class="teacher-id">🪪 EMP-R016</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👩‍🏫</div>
+          <div class="teacher-name">श्रीमती [नाम]</div>
+          <div class="teacher-subject">अर्थशास्त्र</div>
+          <div class="teacher-id">🪪 EMP-R017</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👨‍🏫</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">वाणिज्य</div>
+          <div class="teacher-id">🪪 EMP-R018</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👩‍🏫</div>
+          <div class="teacher-name">श्रीमती [नाम]</div>
+          <div class="teacher-subject">चित्रकला</div>
+          <div class="teacher-id">🪪 EMP-R019</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👨‍🏫</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">संगीत</div>
+          <div class="teacher-id">🪪 EMP-R020</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👩‍🏫</div>
+          <div class="teacher-name">श्रीमती [नाम]</div>
+          <div class="teacher-subject">प्राथमिक शिक्षक</div>
+          <div class="teacher-id">🪪 EMP-R021</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👨‍🏫</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">प्राथमिक शिक्षक</div>
+          <div class="teacher-id">🪪 EMP-R022</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👩‍🏫</div>
+          <div class="teacher-name">श्रीमती [नाम]</div>
+          <div class="teacher-subject">प्राथमिक शिक्षक</div>
+          <div class="teacher-id">🪪 EMP-R023</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👨‍🏫</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">प्राथमिक शिक्षक</div>
+          <div class="teacher-id">🪪 EMP-R024</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👩‍🏫</div>
+          <div class="teacher-name">श्रीमती [नाम]</div>
+          <div class="teacher-subject">प्राथमिक शिक्षक</div>
+          <div class="teacher-id">🪪 EMP-R025</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👨‍🏫</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">माध्यमिक शिक्षक</div>
+          <div class="teacher-id">🪪 EMP-R026</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👩‍🏫</div>
+          <div class="teacher-name">श्रीमती [नाम]</div>
+          <div class="teacher-subject">माध्यमिक शिक्षक</div>
+          <div class="teacher-id">🪪 EMP-R027</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👨‍🏫</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">माध्यमिक शिक्षक</div>
+          <div class="teacher-id">🪪 EMP-R028</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👩‍🏫</div>
+          <div class="teacher-name">श्रीमती [नाम]</div>
+          <div class="teacher-subject">माध्यमिक शिक्षक</div>
+          <div class="teacher-id">🪪 EMP-R029</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👨‍🏫</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">माध्यमिक शिक्षक</div>
+          <div class="teacher-id">🪪 EMP-R030</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👩‍🏫</div>
+          <div class="teacher-name">श्रीमती [नाम]</div>
+          <div class="teacher-subject">उच्च माध्यमिक</div>
+          <div class="teacher-id">🪪 EMP-R031</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👨‍🏫</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">उच्च माध्यमिक</div>
+          <div class="teacher-id">🪪 EMP-R032</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👩‍🏫</div>
+          <div class="teacher-name">श्रीमती [नाम]</div>
+          <div class="teacher-subject">उच्च माध्यमिक</div>
+          <div class="teacher-id">🪪 EMP-R033</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👨‍🏫</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">उच्च माध्यमिक</div>
+          <div class="teacher-id">🪪 EMP-R034</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👩‍🏫</div>
+          <div class="teacher-name">श्रीमती [नाम]</div>
+          <div class="teacher-subject">उच्च माध्यमिक</div>
+          <div class="teacher-id">🪪 EMP-R035</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👨‍🏫</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">पुस्तकालयाध्यक्ष</div>
+          <div class="teacher-id">🪪 EMP-R036</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👩‍🏫</div>
+          <div class="teacher-name">श्रीमती [नाम]</div>
+          <div class="teacher-subject">कार्यालय सहायक</div>
+          <div class="teacher-id">🪪 EMP-R037</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👨‍🏫</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">प्रयोगशाला सहायक</div>
+          <div class="teacher-id">🪪 EMP-R038</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👩‍🏫</div>
+          <div class="teacher-name">श्रीमती [नाम]</div>
+          <div class="teacher-subject">प्रशासनिक अधिकारी</div>
+          <div class="teacher-id">🪪 EMP-R039</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👨‍🏫</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">लेखाकार</div>
+          <div class="teacher-id">🪪 EMP-R040</div>
+          <span class="teacher-badge" style="background:#dbeafe; color:#1e4db7;">नियमित</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 2: GUEST TEACHERS -->
+    <div style="margin-bottom:50px;">
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:24px; padding-bottom:12px; border-bottom:3px solid var(--gold);">
+        <div style="background:var(--gold); color:var(--blue-deep); padding:8px 16px; border-radius:8px; font-weight:700; font-size:0.9rem;">🎓 अतिथि शिक्षक (10)</div>
+      </div>
+      <div class="teacher-grid">
+        <div class="teacher-card">
+          <div class="teacher-avatar">👨‍🏫</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">[विषय]</div>
+          <div class="teacher-id">🪪 EMP-G001</div>
+          <span class="teacher-badge" style="background:#fef9c3; color:#a16207;">अतिथि</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👩‍🏫</div>
+          <div class="teacher-name">श्रीमती [नाम]</div>
+          <div class="teacher-subject">[विषय]</div>
+          <div class="teacher-id">🪪 EMP-G002</div>
+          <span class="teacher-badge" style="background:#fef9c3; color:#a16207;">अतिथि</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👨‍🏫</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">[विषय]</div>
+          <div class="teacher-id">🪪 EMP-G003</div>
+          <span class="teacher-badge" style="background:#fef9c3; color:#a16207;">अतिथि</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👩‍🏫</div>
+          <div class="teacher-name">श्रीमती [नाम]</div>
+          <div class="teacher-subject">[विषय]</div>
+          <div class="teacher-id">🪪 EMP-G004</div>
+          <span class="teacher-badge" style="background:#fef9c3; color:#a16207;">अतिथि</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👨‍🏫</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">[विषय]</div>
+          <div class="teacher-id">🪪 EMP-G005</div>
+          <span class="teacher-badge" style="background:#fef9c3; color:#a16207;">अतिथि</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👩‍🏫</div>
+          <div class="teacher-name">श्रीमती [नाम]</div>
+          <div class="teacher-subject">[विषय]</div>
+          <div class="teacher-id">🪪 EMP-G006</div>
+          <span class="teacher-badge" style="background:#fef9c3; color:#a16207;">अतिथि</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👨‍🏫</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">[विषय]</div>
+          <div class="teacher-id">🪪 EMP-G007</div>
+          <span class="teacher-badge" style="background:#fef9c3; color:#a16207;">अतिथि</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👩‍🏫</div>
+          <div class="teacher-name">श्रीमती [नाम]</div>
+          <div class="teacher-subject">[विषय]</div>
+          <div class="teacher-id">🪪 EMP-G008</div>
+          <span class="teacher-badge" style="background:#fef9c3; color:#a16207;">अतिथि</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👨‍🏫</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">[विषय]</div>
+          <div class="teacher-id">🪪 EMP-G009</div>
+          <span class="teacher-badge" style="background:#fef9c3; color:#a16207;">अतिथि</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👩‍🏫</div>
+          <div class="teacher-name">श्रीमती [नाम]</div>
+          <div class="teacher-subject">[विषय]</div>
+          <div class="teacher-id">🪪 EMP-G010</div>
+          <span class="teacher-badge" style="background:#fef9c3; color:#a16207;">अतिथि</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 3: PEONS -->
+    <div style="margin-bottom:50px;">
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:24px; padding-bottom:12px; border-bottom:3px solid #16a34a;">
+        <div style="background:#16a34a; color:white; padding:8px 16px; border-radius:8px; font-weight:700; font-size:0.9rem;">🧹 चतुर्थ श्रेणी कर्मचारी (3)</div>
+      </div>
+      <div class="teacher-grid">
+        <div class="teacher-card">
+          <div class="teacher-avatar">👷</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">चतुर्थ श्रेणी कर्मचारी</div>
+          <div class="teacher-id">🪪 EMP-P001</div>
+          <span class="teacher-badge" style="background:#dcfce7; color:#16a34a;">चतुर्थ श्रेणी</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👷</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">चतुर्थ श्रेणी कर्मचारी</div>
+          <div class="teacher-id">🪪 EMP-P002</div>
+          <span class="teacher-badge" style="background:#dcfce7; color:#16a34a;">चतुर्थ श्रेणी</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👷</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">चतुर्थ श्रेणी कर्मचारी</div>
+          <div class="teacher-id">🪪 EMP-P003</div>
+          <span class="teacher-badge" style="background:#dcfce7; color:#16a34a;">चतुर्थ श्रेणी</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 4: SECURITY GUARDS -->
+    <div style="margin-bottom:30px;">
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:24px; padding-bottom:12px; border-bottom:3px solid #7c3aed;">
+        <div style="background:#7c3aed; color:white; padding:8px 16px; border-radius:8px; font-weight:700; font-size:0.9rem;">🛡️ सुरक्षा गार्ड (6)</div>
+      </div>
+      <div class="teacher-grid">
+        <div class="teacher-card">
+          <div class="teacher-avatar">💂</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">सुरक्षा गार्ड</div>
+          <div class="teacher-id">🪪 EMP-S001</div>
+          <span class="teacher-badge" style="background:#ede9fe; color:#7c3aed;">सुरक्षा</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">💂</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">सुरक्षा गार्ड</div>
+          <div class="teacher-id">🪪 EMP-S002</div>
+          <span class="teacher-badge" style="background:#ede9fe; color:#7c3aed;">सुरक्षा</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">💂</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">सुरक्षा गार्ड</div>
+          <div class="teacher-id">🪪 EMP-S003</div>
+          <span class="teacher-badge" style="background:#ede9fe; color:#7c3aed;">सुरक्षा</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">💂</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">सुरक्षा गार्ड</div>
+          <div class="teacher-id">🪪 EMP-S004</div>
+          <span class="teacher-badge" style="background:#ede9fe; color:#7c3aed;">सुरक्षा</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">💂</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">सुरक्षा गार्ड</div>
+          <div class="teacher-id">🪪 EMP-S005</div>
+          <span class="teacher-badge" style="background:#ede9fe; color:#7c3aed;">सुरक्षा</span>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">💂</div>
+          <div class="teacher-name">श्री [नाम]</div>
+          <div class="teacher-subject">सुरक्षा गार्ड</div>
+          <div class="teacher-id">🪪 EMP-S006</div>
+          <span class="teacher-badge" style="background:#ede9fe; color:#7c3aed;">सुरक्षा</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESOURCES -->
     <div style="margin-top: 40px;">
       <h3 style="color: var(--blue-deep); font-size: 1.2rem; margin-bottom: 16px;">📚 शिक्षक संसाधन</h3>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px;">
-        <div class="info-box">
-          <strong>📋 पाठ योजना प्रारूप</strong><br>
-          शिक्षकों के लिए मानक पाठ योजना फॉर्मेट यहाँ डाउनलोड करें।
-        </div>
-        <div class="info-box">
-          <strong>📅 शिक्षक समय-सारणी</strong><br>
-          सप्ताहिक कक्षा-वार शिक्षण कार्यक्रम।
-        </div>
-        <div class="info-box">
-          <strong>📊 मूल्यांकन प्रपत्र</strong><br>
-          छात्र मूल्यांकन और रिपोर्ट कार्ड प्रारूप।
-        </div>
+        <div class="info-box"><strong>📋 पाठ योजना प्रारूप</strong><br>शिक्षकों के लिए मानक पाठ योजना फॉर्मेट।</div>
+        <div class="info-box"><strong>📅 शिक्षक समय-सारणी</strong><br>सप्ताहिक कक्षा-वार शिक्षण कार्यक्रम।</div>
+        <div class="info-box"><strong>📊 मूल्यांकन प्रपत्र</strong><br>छात्र मूल्यांकन और रिपोर्ट कार्ड प्रारूप।</div>
       </div>
     </div>
   </div>
