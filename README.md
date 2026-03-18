@@ -1,2 +1,2 @@
-# sandipani-baraipura
+# school
 सांदीपनि विद्यालय की आधिकारिक  वेबसाइट 
