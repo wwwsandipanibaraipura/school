@@ -873,6 +873,7 @@
     <a href="#" onclick="showPage('services', this)">⚙️ सुविधाएं</a>
     <a href="#" onclick="showPage('gallery', this)">🖼️ गैलरी</a>
     <a href="#" onclick="showPage('contact', this)">📞 संपर्क करें</a>
+    <a href="#" onclick="showPage('result', this)">📊 परिणाम</a>
   </div>
 </nav>
 
@@ -1048,7 +1049,29 @@
 </div>
 
 
-<!-- ==================== TEACHERS PAGE ==================== -->
+<!-- ==================== RESULT PAGE ==================== -->
+  <div id="page-result" class="page">
+  <div class="section">
+    <h2 class="section-title">परीक्षा परिणाम</h2>
+    <p class="section-subtitle">अपना रोल नंबर और जन्मतिथि डालकर परिणाम देखें</p>
+
+    <div class="form-card" style="text-align:center;">
+      <div class="form-group">
+        <label>रोल नंबर</label>
+        <input type="text" id="roll" placeholder="जैसे: 101">
+      </div>
+
+      <div class="form-group">
+        <label>जन्मतिथि</label>
+        <input type="date" id="dob">
+      </div>
+
+      <button class="form-submit" onclick="checkResult()">🔍 परिणाम देखें</button>
+
+      <div id="resultBox" style="margin-top:20px;"></div>
+    </div>
+  </div>
+</div>
 
 <!-- ==================== TEACHERS PAGE ==================== -->
 <div id="page-teachers" class="page">
@@ -2122,5 +2145,44 @@ function previewPhoto(input) {
   💬
 </a>
 <div class="whatsapp-tooltip">WhatsApp पर संपर्क करें</div>
+    <script>
+const students = [
+  {
+    roll: "101",
+    dob: "2008-05-12",
+    pdf: "https://drive.google.com/file/d/FILE_ID/preview"
+  },
+  {
+    roll: "102",
+    dob: "2008-08-21",
+    pdf: "https://drive.google.com/file/d/FILE_ID/preview"
+  }
+];
+
+function checkResult() {
+  const roll = document.getElementById("roll").value.trim();
+  const dob = document.getElementById("dob").value;
+
+  const student = students.find(s => s.roll === roll && s.dob === dob);
+
+  if (student) {
+    document.getElementById("resultBox").innerHTML = `
+      <div class="info-box">
+        ✅ आपका परिणाम मिल गया!
+        <br><br>
+        <a href="${student.pdf}" target="_blank" class="btn-primary">📄 Marksheet देखें</a>
+        <br><br>
+        <a href="${student.pdf}" download class="btn-secondary">⬇️ Download करें</a>
+      </div>
+    `;
+  } else {
+    document.getElementById("resultBox").innerHTML = `
+      <div class="info-box" style="border-left-color:red;">
+        ❌ Result नहीं मिला! कृपया सही जानकारी डालें।
+      </div>
+    `;
+  }
+}
+</script>
 </body>
 </html>
