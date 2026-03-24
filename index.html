@@ -2148,45 +2148,6 @@ function previewPhoto(input) {
     <script>
 const students = [
   {
-    roll: "101",
-    dob: "2008-05-12",
-    pdf: "https://drive.google.com/file/d/FILE_ID/preview"
-  },
-  {
-    roll: "102",
-    dob: "2008-08-21",
-    pdf: "https://drive.google.com/file/d/FILE_ID/preview"
-  }
-];
-
-function checkResult() {
-  const roll = document.getElementById("roll").value.trim();
-  const dob = document.getElementById("dob").value;
-
-  const student = students.find(s => s.roll === roll && s.dob === dob);
-
-  if (student) {
-    document.getElementById("resultBox").innerHTML = `
-      <div class="info-box">
-        ✅ आपका परिणाम मिल गया!
-        <br><br>
-        <a href="${student.pdf}" target="_blank" class="btn-primary">📄 Marksheet देखें</a>
-        <br><br>
-        <a href="${student.pdf}" download class="btn-secondary">⬇️ Download करें</a>
-      </div>
-    `;
-  } else {
-    document.getElementById("resultBox").innerHTML = `
-      <div class="info-box" style="border-left-color:red;">
-        ❌ Result नहीं मिला! कृपया सही जानकारी डालें।
-      </div>
-    `;
-  }
-}
-</script>
-   <script>
-const students = [
-  {
     roll: "9266210370101",
     dob: "2009-12-19",
     pdf: "https://drive.google.com/file/d/1WHalgwlBOEN11BKx6A-guvHrPB9cD_O-/preview"
@@ -2213,7 +2174,6 @@ const students = [
   }
 ];
 
-<script>
 function checkResult() {
   const roll = document.getElementById("roll").value.trim();
   const dob = document.getElementById("dob").value;
@@ -2225,9 +2185,9 @@ function checkResult() {
       <div class="info-box">
         ✅ Result मिल गया!
         <br><br>
-        <iframe src="${student.pdf}" width="100%" height="500px" style="border-radius:10px;"></iframe>
+        <a href="${student.pdf}" target="_blank" class="btn-primary">📄 Marksheet देखें</a>
         <br><br>
-        <a href="${student.pdf}" target="_blank" class="btn-primary">🔍 Full Screen में खोलें</a>
+        <a href="${student.pdf}" download class="btn-secondary">⬇️ Download करें</a>
       </div>
     `;
   } else {
@@ -2239,5 +2199,7 @@ function checkResult() {
   }
 }
 </script>
+
+
 </body>
 </html>
