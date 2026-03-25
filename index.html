@@ -2146,8 +2146,9 @@ function previewPhoto(input) {
 </a>
 <div class="whatsapp-tooltip">WhatsApp पर संपर्क करें</div>
     <script>
-const students = [
- "9266210370101": {dob:"2009-12-19", link:"https://drive.google.com/file/d/1WHalgwlBOEN11BKx6A-guvHrPB9cD_O-/preview"},
+const students = {
+
+"9266210370101": {dob:"2009-12-19", link:"https://drive.google.com/file/d/1WHalgwlBOEN11BKx6A-guvHrPB9cD_O-/preview"},
 "9266210370102": {dob:"2011-05-05", link:"https://drive.google.com/file/d/1xppaSbdVjlk-jRBg0gYBwRuJYYJtV7mp/preview"},
 "9266210370103": {dob:"2010-06-07", link:"https://drive.google.com/file/d/1zf38hq6F45W73XRufjlTHIeRJyzJiuUj/preview"},
 "9266210370104": {dob:"2010-12-10", link:"https://drive.google.com/file/d/1WHaT1yrnxaLcyfJKJkZkyN2KlERYlGTB/preview"},
@@ -2345,33 +2346,25 @@ const students = [
 "9266210370443": {dob:"2009-12-31", link:"https://drive.google.com/file/d/1BViznRsOgYMFBHT_Wb7bGv8V1UVZV9ez/preview"},
 "9266210370444": {dob:"2012-02-21", link:"https://drive.google.com/file/d/1OWl6Cc09qs82MXOE6vGr2mYA_hO-Stjj/preview"},
 "9266210370445": {dob:"2010-12-06", link:"https://drive.google.com/file/d/1ebCoJvahJCrQp1rxUx0JhvGFzHw8n9N6/preview"},
-"9266210370446": {dob:"2012-07-01", link:"https://drive.google.com/file/d/18yP39TFW4WComx3K9BLAkD7EnuSUctO7/preview"},
-
-];
+"9266210370446": {dob:"2012-07-01", link:"https://drive.google.com/file/d/18yP39TFW4WComx3K9BLAkD7EnuSUctO7/preview"}
+};
 
 function checkResult() {
-  const roll = document.getElementById("roll").value.trim();
-  const dob = document.getElementById("dob").value;
+    let roll = document.getElementById("roll").value.trim();
+    let dob = document.getElementById("dob").value;
+    let resultBox = document.getElementById("resultBox");
 
-  const student = students.find(s => s.roll === roll && s.dob === dob);
-
-  if (student) {
-    document.getElementById("resultBox").innerHTML = `
-      <div class="info-box">
-        ✅ Result मिल गया!
-        <br><br>
-        <a href="${student.pdf}" target="_blank" class="btn-primary">📄 Marksheet देखें</a>
-        <br><br>
-        <a href="${student.pdf}" download class="btn-secondary">⬇️ Download करें</a>
-      </div>
-    `;
-  } else {
-    document.getElementById("resultBox").innerHTML = `
-      <div class="info-box" style="border-left-color:red;">
-        ❌ Result नहीं मिला! सही जानकारी डालें।
-      </div>
-    `;
-  }
+    if (students[roll]) {
+        if (students[roll].dob === dob) {
+            resultBox.innerHTML = `
+                <iframe src="${students[roll].link}" width="100%" height="500px"></iframe>
+            `;
+        } else {
+            resultBox.innerHTML = "<p style='color:red;'>❌ गलत जन्मतिथि</p>";
+        }
+    } else {
+        resultBox.innerHTML = "<p style='color:red;'>❌ रोल नंबर नहीं मिला</p>";
+    }
 }
 </script>
 
